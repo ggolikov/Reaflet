@@ -1,0 +1,42 @@
+{
+  "name": "Reaflet",
+  "version": "1.0.0",
+  "description": "React + Leaflet example",
+  "main": "server.js",
+  "browserify": {"transform": ["reactify"]},
+  "dependencies": {
+    "babel-core": "^6.17.0",
+    "babel-preset-react": "^6.16.0",
+    "leaflet": "^0.7.7",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.0",
+    "reactify": "^1.1.1",
+    "serve": "^1.4.0",
+    "watchify": "^3.7.0"
+  },
+  "scripts": {
+    "build-js": "browserify src/js/main.js -o bundle.js",
+    "watch-js": "watchify src/js/main.js -o bundle.js",
+    "serve": "serve -p 3001",
+    "start": "npm run watch-js & npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ggolikov/Reaflet.git"
+  },
+  "keywords": [
+    "react",
+    "leaflet",
+    "reaflet",
+    "example"
+  ],
+  "author": "ggolikov",
+  "homepage": "https://github.com/ggolikov/Reaflet",
+  "engines": {
+    "node": "0.12.x"
+  }
+}
