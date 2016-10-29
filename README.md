@@ -1,2 +1,2 @@
 # Reaflet
-React + Leaflet
+React + Leaflet app example
